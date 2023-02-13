@@ -21,4 +21,4 @@ fields:
   default: page
   hidden: true
 pages:
-- content/contact.md
+- content/board/kontakt.md
