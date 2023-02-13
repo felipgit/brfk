@@ -5,13 +5,27 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: content
-  label: Pages
+  path: content/board
+  label: Styrelsen
   create: all
-  match: "*"
+  match: "**/*"
+  templates:
+  - contact
 - type: directory
-  path: content/post
-  label: Post
+  path: content/documents
+  label: Document
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/members
+  label: Medlemmar
+  create: all
+  match: "**/*"
+  templates:
+  - page
+- type: directory
+  path: content/news
+  label: Nyheter
   create: documents
   match: "*.md"
   exclude: _index.md
@@ -19,9 +33,11 @@ sections:
   - post
 - type: directory
   path: content/about
-  label: About
+  label: Om
   create: all
   match: "**/*"
+  templates:
+  - page
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
