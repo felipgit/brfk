@@ -1,6 +1,5 @@
 +++
 description = "Kontaktuppgifter till styrelsen"
-draft = true
 featured_image = ""
 omit_header_text = true
 title = "Kontakt"
